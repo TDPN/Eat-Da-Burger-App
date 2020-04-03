@@ -1,0 +1,16 @@
+<li class="list-group-item">
+    <div class="container">
+        <div class="row">
+            <div class='col-sm'><span>{{burger_name}}</span></div>
+            {{#if devoured}}
+            <button type='button' class="devour col-auto btn btn-primary pull-right" data-id="{{id}}" data-newsleep="{{devoured}}">
+                Devour
+            </button>
+            {{else}}
+            <button type='button' class="delete col-auto btn btn-danger pull-right" data-id="{{id}}" data-newsleep="{{devoured}}">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+            {{/if}}
+        </div>
+    </div>
+</li>
